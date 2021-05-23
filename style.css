@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #f5f5f5;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    grid-gap:2rem;
+    padding:1rem;
+    border-radius: 1.5rem;;
+    background: #fff;
+    box-shadow: 
+    inset 0 0 15px rgba(55, 84, 170,0),
+    inset 0 0 20px rgba(255, 255, 255,0),
+    7px 7px 15px rgba(55, 84, 170,.15),
+    -7px -7px 20px rgba(255, 255, 255,1),
+    inset 0px 0px 4px rgba(255, 255, 255,.2);
+
+}
+.card{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+[class*="fa-"]{
+    margin:20px;
+    font-size: 2.8rem;
+}
+.number{
+    font-family: monospace, serif;
+    font-size: 1.7rem;
+}
+
+.fa-twitter{
+    color :#1DA1F2;
+}
+.fa-youtube{
+    color:#FF0000;
+}
+.fa-facebook{
+    color:#4267B2;
+}
+.fa-quora{
+    color:#801B00;
+}
+
+@media screen and (max-width: 880px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        line-height: 0.5rem;
+    }
+    .number{
+        margin-bottom: 1rem;
+    }
+}
